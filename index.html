@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Accueil - Mon Entreprise</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Accueil - Héloïse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <nav class="nav">
-    <div class="logo">MonEntreprise</div>
-    <div class="burger" onclick="toggleMenu()">☰</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<body onscroll="handleScroll()">
+    <nav class="nav">
+        <div class="burger-menu-bouton" onclick="toggleMenu()">☰</div>
+        <ul class="nav_ul" id="navMenu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-  <header>
-    <h1>Bienvenue sur MonEntreprise</h1>
-    <p>Une entreprise innovante dans le digital et la formation.</p>
-    <img src="img/profile.jpg" alt="Photo de l'entreprise" class="profile-image">
-  </header>
+    <header>
+        <h1>😻🎀HÉLOÏSE, Le goût de la PERFECTION🎀😻</h1>
+    </header>
 
-  <section>
-    <h2>Qui sommes-nous ?</h2>
-    <p>Nous sommes spécialisés dans le développement web, les applications et la cybersécurité.</p>
-  </section>
 
-  <footer>
-    <p>&copy; 2025 MonEntreprise - Tous droits réservés</p>
-  </footer>
+    <section>
+        <h2>Délices et Tentations🤤: Découvrez les secrets de la cuisine d'Héloïse😋</h2>
+    </section>
 
-  <script src="script.js"></script>
+    <p>VOTRE <strong>SASTISFACTION</strong> NOTRE <strong>PRIORITÉ</strong>. <em>MERCI🥰</em>.</p>
+    <p>Visitez <a href="https://www.lesdelices.org">ce site web</a> pour plus d'informations.</p>
+
+    <img src="dossier/WhatsApp Image 2025-03-18 at 03.12.44_22bc06db - Copy.jpg" alt="Description de l'image">
+    
+    <div class="body">
+        <div class="produits">
+            <h3>Nos produits:</h3>
+            <div class="btn">
+                <button class="Btn">Smoothie</button>
+                <button class="Btn">Jus naturel</button>
+                <button class="Btn">Crêpes</button>
+
+            </div>
+                
+            
+        </div>
+        <div class="etapes">
+            <h3>Les étapes à suivre:</h3>
+            <div class="btn">
+                <button class="Btn">Je consulte🔎</button>
+                <button class="Btn">Je commande👍</button>
+                <button class="Btn">Je laisse une note✍️</button>
+            </div>
+                
+            
+        </div>
+    </div>
+
+    <form action="submit.php" method="POST">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <button type="submit">Envoyer👌</button>
+    </form>
+
+    <section>
+        <h3>Carrousel d’images</h3>
+        <div class="carousel">
+            <img src="img/crepes.png" class="carousel-img active">
+            <img src="img/jus naturel.png" class="carousel-img">
+            <img src="img/Screenshot 2025-04-15 101607.png" class="carousel-img">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
